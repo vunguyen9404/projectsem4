@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 
 
 class AddUser extends PureComponent {
-
   render() {
     return (
       <div className="row">

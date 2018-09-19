@@ -25,7 +25,6 @@ class SignIn extends PureComponent {
   };
 
   render() {
-    const { username, password } = this.state;
     return (
       <div className="login-form">
         <div className="row min-h-fullscreen center-vh p-20 m-0">
@@ -39,21 +38,19 @@ class SignIn extends PureComponent {
                          className="form-control"
                          id="username"
                          name="username"
-                         value={username}
+                         value={this.state.username}
                          onChange={this.handleChange}
                          placeholder="Username"/>
                 </div>
-
                 <div className="form-group">
                   <input type="password"
                          className="form-control"
                          id="password"
                          name="password"
-                         value={password}
+                         value={this.state.password}
                          onChange={this.handleChange}
                          placeholder="Password"/>
                 </div>
-
                 <div className="form-group flexbox flex-column flex-md-row">
                   <label className="custom-control custom-checkbox">
                     <input type="checkbox"
@@ -65,7 +62,6 @@ class SignIn extends PureComponent {
                     </span>
                   </label>
                 </div>
-
                 <div className="form-group">
                   <button className="btn btn-bold btn-block btn-primary"
                           type="submit">Login
@@ -74,13 +70,11 @@ class SignIn extends PureComponent {
               </form>
             </div>
           </div>
-
           <footer className="col-12 align-self-end text-center fs-13">
             <p className="mb-0">
               <small>Copyright © 2018</small>
             </p>
           </footer>
-
         </div>
       </div>
     );

@@ -7,6 +7,9 @@ import UserList             from './components/UserList';
 import AddUser              from './components/AddUser';
 import Prize                from './components/Prize';
 import Profile              from './components/Profile';
+import NotFound             from './components/NotFound';
+import InternalServer       from './components/InternalServer';
+import Competition          from './components/Competition';
 
 
 class App extends Component {
@@ -23,7 +26,19 @@ class App extends Component {
               <Route path="/user-list" name="user-list" component={UserList}/>
               <Route path="/add-user" name="add-user" component={AddUser}/>
               <Route path="/profile" name="profile" component={Profile}/>
+              <Route path="/not-found" name="not-found" component={NotFound}/>
+              <Route path="/internal-server"
+                     name="internal-server"
+                     component={InternalServer}/>
+              <Route path="/competition"
+                     name="competition"
+                     component={Competition}/>
             </Switch>
+            {/* Credential */}
+            {/* Profile */}
+            {/* Article */}
+            {/* Competition */}
+            {/* Comment */}
           </div>
         </main>
       </div>
